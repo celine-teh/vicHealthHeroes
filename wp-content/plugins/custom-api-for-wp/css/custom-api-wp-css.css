@@ -1,0 +1,104 @@
+
+        ul.multiselect-container.dropdown-menu.show {
+            /* padding: 2px 20px 2px 20px; */
+            FONT-WEIGHT: 500;
+            position:absolute;
+            /* display: inline-block; */
+            list-style-type: none;
+            margin: 0;
+            font-size: 16px;
+            background-color: #f1eaea;
+            width: 220px;
+
+        }
+
+        label.mo_custom_api_labels {
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        select.mo_custom_api_SelectColumn {
+            padding: 2px 20px 2px 20px;
+            FONT-WEIGHT: 500;
+            position:absolute;
+            display: inline-block;
+            list-style-type: none;
+            /* margin-bottom: 5px; */
+            font-size: 16px;
+            background-color: #F3E8E8;
+            /* padding: 0; */
+        }
+
+        button.multiselect.dropdown-toggle.btn.btn-default {
+            /* padding: 2px 20px 2px 20px;
+            FONT-WEIGHT: 500;
+            position: absolute;
+            list-style-type: none; */
+            margin-top: -5px;
+            font-size: 16px;
+            background-color: #f1eaea;
+        }
+    
+        #wpwrap{
+            background-color:#e5e5e4;
+        }
+
+        h3.HeadName{
+            margin-top: 2px;
+            margin-bottom: 10px;
+            margin-left: 15px;
+        }
+
+        .mo_custom_api_support_layout{
+            width: 93%;
+            background-color:#FFFFFF; 
+            /* border:1px solid #CCCCCC;  */
+            padding-left:20px; 
+            border:.1rem solid #bfc4c8;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            border-style:solid;
+     }
+
+     .mo_custom_api_settings_table {
+            width: 50%;
+        }
+    .mo_custom_api_settings_table tr td:first-child {
+            width: 20%;
+        }
+
+     .mo_table_layout {
+         background-color:#FFFFFF; 
+         border:1px solid #CCCCCC; 
+         padding:0px 10px 10px 10px;
+         margin-bottom: 10px;
+     }
+
+     .mo_table_textbox {
+        width:150%;
+    }
+
+    .mo_api_auth_nav_tab_active{
+        border-bottom: 1px solid #ffffff;
+        background: #ffffff;
+        color: #000;
+    }
+    .nav-tab-active{
+        margin-bottom: -1px;
+        background: white;
+        border-bottom: white;
+        border-bottom: 3px solid white;
+    }
+    .nav-tab-active:hover{
+        color: black;
+        background: white;
+        border-bottom: white;
+        border-bottom: 3px solid white;
+    }
+
+    .mo_oauth_premium_option_text {
+        position: absolute;
+        font-weight: bold;
+        margin: 5.5% 11%;
+        z-index: 1;
+    }
+    

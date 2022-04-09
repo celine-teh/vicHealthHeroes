@@ -1,0 +1,14 @@
+/* Envato Custom CSS for elementor Template Kit 130 */
+/* Illustrations by http://undraw.co */
+
+.envato-kit-130-editor .alignleft {
+	float: left;
+	margin: 0 15px 15px 0
+}
+
+/* Button group - using inner section
+ * - override default inner section center alignment
+ */
+.envato-kit-130-buttongroup-left .elementor-container {
+	margin-left: 0;
+}

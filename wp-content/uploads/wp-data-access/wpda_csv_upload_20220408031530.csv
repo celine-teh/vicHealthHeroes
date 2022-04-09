@@ -1,0 +1,89 @@
+Category,Healthcare Metric,Area,Percentage
+Age,45–64,Urban ,60.1
+Age,65+,Urban ,39.9
+Age,45–64,Inner regional,56.2
+Age,65+,Inner regional,43.8
+Age,45–64,Outer regional,58.1
+Age,65+,Outer regional,41.8
+Age,45–64,Remote/Very remote,61.4
+Age,65+,Remote/Very remote,38.3
+Sex,Male,Urban ,46.9
+Sex,Female,Urban ,53.1
+Sex,Male,Inner regional,47.1
+Sex,Female,Inner regional,52.9
+Sex,Male,Outer regional,48.7
+Sex,Female,Outer regional,51.3
+Sex,Male,Remote/Very remote,48.7
+Sex,Female,Remote/Very remote,51.3
+Private health insurance,Covered,Urban ,67.5
+Private health insurance,Not Covered,Urban ,31.7
+Private health insurance,Covered,Inner regional,59.9
+Private health insurance,Not Covered,Inner regional,39.5
+Private health insurance,Covered,Outer regional,57.0
+Private health insurance,Not Covered,Outer regional,42.1
+Private health insurance,Covered,Remote/Very remote,59.7
+Private health insurance,Not Covered,Remote/Very remote,38.9
+Usual doctor,Has,Urban ,88.8
+Usual doctor,Doesn't have,Urban ,11.1
+Usual doctor,Has,Inner regional,86.8
+Usual doctor,Doesn't have,Inner regional,13.2
+Usual doctor,Has,Outer regional,80.9
+Usual doctor,Doesn't have,Outer regional,19.0
+Usual doctor,Has,Remote/Very remote,68.6
+Usual doctor,Doesn't have,Remote/Very remote,31.5
+Usual place of care,Has,Urban ,89.8
+Usual place of care,Doesn't have,Urban ,9.8
+Usual place of care,Has,Inner regional,91.5
+Usual place of care,Doesn't have,Inner regional,8.0
+Usual place of care,Has,Outer regional,89.9
+Usual place of care,Doesn't have,Outer regional,9.6
+Usual place of care,Has,Remote/Very remote,86.1
+Usual place of care,Doesn't have,Remote/Very remote,13.3
+Reason for not seeing a doctor,Cost,Urban ,16.5
+Reason for not seeing a doctor,No doctor nearby,Urban ,3.4
+Reason for not seeing a doctor,Could not get an appointment,Urban ,47.1
+Reason for not seeing a doctor,Other ,Urban ,45.0
+Reason for not seeing a doctor,Cost,Inner regional,19.9
+Reason for not seeing a doctor,No doctor nearby,Inner regional,4.7
+Reason for not seeing a doctor,Could not get an appointment,Inner regional,51.2
+Reason for not seeing a doctor,Other ,Inner regional,40.0
+Reason for not seeing a doctor,Cost,Outer regional,16.6
+Reason for not seeing a doctor,No doctor nearby,Outer regional,8.6
+Reason for not seeing a doctor,Could not get an appointment,Outer regional,53.6
+Reason for not seeing a doctor,Other ,Outer regional,38.9
+Reason for not seeing a doctor,Cost,Remote/Very remote,11.2
+Reason for not seeing a doctor,No doctor nearby,Remote/Very remote,20.3
+Reason for not seeing a doctor,Could not get an appointment,Remote/Very remote,43.7
+Reason for not seeing a doctor,Other ,Remote/Very remote,35.6
+Whether received care from a health professional for emotional or psychological health,Received,Urban ,9.6
+Whether received care from a health professional for emotional or psychological health,Did not receive,Urban ,88.8
+Whether received care from a health professional for emotional or psychological health,Received,Inner regional,8.8
+Whether received care from a health professional for emotional or psychological health,Did not receive,Inner regional,89.8
+Whether received care from a health professional for emotional or psychological health,Received,Outer regional,8.3
+Whether received care from a health professional for emotional or psychological health,Did not receive,Outer regional,90.2
+Whether received care from a health professional for emotional or psychological health,Received,Remote/Very remote,8.9
+Whether received care from a health professional for emotional or psychological health,Did not receive,Remote/Very remote,89.3
+Whether received care from a health professional for physical health,Received,Urban ,45.4
+Whether received care from a health professional for physical health,Did not receive,Urban ,53.1
+Whether received care from a health professional for physical health,Received,Inner regional,42.0
+Whether received care from a health professional for physical health,Did not receive,Inner regional,56.4
+Whether received care from a health professional for physical health,Received,Outer regional,39.9
+Whether received care from a health professional for physical health,Did not receive,Outer regional,58.5
+Whether received care from a health professional for physical health,Received,Remote/Very remote,36.3
+Whether received care from a health professional for physical health,Did not receive,Remote/Very remote,62.5
+All reasons for not seeing a health professional for physical health when needed,Cost,Urban ,52.4
+All reasons for not seeing a health professional for physical health when needed,No service nearby,Urban ,4.2
+All reasons for not seeing a health professional for physical health when needed,Could not get an appointment ,Urban ,21.4
+All reasons for not seeing a health professional for physical health when needed,Other,Urban ,40.9
+All reasons for not seeing a health professional for physical health when needed,Cost,Inner regional,49.1
+All reasons for not seeing a health professional for physical health when needed,No service nearby,Inner regional,9.2
+All reasons for not seeing a health professional for physical health when needed,Could not get an appointment ,Inner regional,25.7
+All reasons for not seeing a health professional for physical health when needed,Other,Inner regional,36.8
+All reasons for not seeing a health professional for physical health when needed,Cost,Outer regional,45.5
+All reasons for not seeing a health professional for physical health when needed,No service nearby,Outer regional,17.7
+All reasons for not seeing a health professional for physical health when needed,Could not get an appointment ,Outer regional,35.7
+All reasons for not seeing a health professional for physical health when needed,Other,Outer regional,30.4
+All reasons for not seeing a health professional for physical health when needed,Cost,Remote/Very remote,20.8
+All reasons for not seeing a health professional for physical health when needed,No service nearby,Remote/Very remote,43.6
+All reasons for not seeing a health professional for physical health when needed,Could not get an appointment ,Remote/Very remote,26.7
+All reasons for not seeing a health professional for physical health when needed,Other,Remote/Very remote,33.2

@@ -1,0 +1,258 @@
+{
+    "manifest_version": "1.0.9",
+    "title": "Modern Clinic",
+    "page_builder": "elementor",
+    "kit_version": "2.0.1",
+    "templates": [
+        {
+            "name": "Home 1",
+            "screenshot": "screenshots\/home-1.jpg",
+            "source": "templates\/home-1-d1b05cf2b0a69f8266e12af7a97f4c1b.json",
+            "preview_url": false,
+            "type": "section",
+            "metadata": {
+                "template_type": "section",
+                "elementor_pro_required": false
+            },
+            "elementor_pro_required": false
+        },
+        {
+            "name": "Home 2",
+            "screenshot": "screenshots\/home-2.jpg",
+            "source": "templates\/home-2-5954b8ead9a599bcf922a7431a046e43.json",
+            "preview_url": false,
+            "type": "section",
+            "metadata": {
+                "template_type": "section",
+                "elementor_pro_required": false
+            },
+            "elementor_pro_required": false
+        },
+        {
+            "name": "Home 3",
+            "screenshot": "screenshots\/home-3.jpg",
+            "source": "templates\/home-3-0ed0efa0d88b7cb55114cb7d5537ecef.json",
+            "preview_url": false,
+            "type": "section",
+            "metadata": {
+                "template_type": "section",
+                "elementor_pro_required": true
+            },
+            "elementor_pro_required": true
+        },
+        {
+            "name": "Home 4",
+            "screenshot": "screenshots\/home-4.jpg",
+            "source": "templates\/home-4-b7075d50f99b99bb3b7aa1cbb9672d30.json",
+            "preview_url": false,
+            "type": "section",
+            "metadata": {
+                "template_type": "section",
+                "elementor_pro_required": true
+            },
+            "elementor_pro_required": true
+        },
+        {
+            "name": "Services 1",
+            "screenshot": "screenshots\/services-1-pro.jpg",
+            "source": "templates\/services-1-77b26d34586ef6eb509997a6c1a85c86.json",
+            "preview_url": false,
+            "type": "section",
+            "metadata": {
+                "template_type": "section",
+                "elementor_pro_required": true
+            },
+            "elementor_pro_required": true
+        },
+        {
+            "name": "Services 2",
+            "screenshot": "screenshots\/services-2.jpg",
+            "source": "templates\/services-2-842c081d715e0ce605aca6daf679033e.json",
+            "preview_url": false,
+            "type": "section",
+            "metadata": {
+                "template_type": "section",
+                "elementor_pro_required": false
+            },
+            "elementor_pro_required": false
+        },
+        {
+            "name": "Single Service",
+            "screenshot": "screenshots\/single-service.jpg",
+            "source": "templates\/single-service-dc31fe3a3653294f5616809a2eec52e5.json",
+            "preview_url": false,
+            "type": "section",
+            "metadata": {
+                "template_type": "section",
+                "elementor_pro_required": true
+            },
+            "elementor_pro_required": true
+        },
+        {
+            "name": "How It Works 1",
+            "screenshot": "screenshots\/how-it-works-1.jpg",
+            "source": "templates\/how-it-works-1-c69a0f633c91906b8dcb83f57cbcef47.json",
+            "preview_url": false,
+            "type": "section",
+            "metadata": {
+                "template_type": "section",
+                "elementor_pro_required": false
+            },
+            "elementor_pro_required": false
+        },
+        {
+            "name": "How It Works 2",
+            "screenshot": "screenshots\/how-it-works-2-pro.jpg",
+            "source": "templates\/how-it-works-2-5659276a3458a1e88f32085389a52c6a.json",
+            "preview_url": false,
+            "type": "section",
+            "metadata": {
+                "template_type": "section",
+                "elementor_pro_required": true
+            },
+            "elementor_pro_required": true
+        },
+        {
+            "name": "Doctors",
+            "screenshot": "screenshots\/doctors.jpg",
+            "source": "templates\/doctors-bd2eead4f783d271a1258c9903799160.json",
+            "preview_url": false,
+            "type": "section",
+            "metadata": {
+                "template_type": "section",
+                "elementor_pro_required": false
+            },
+            "elementor_pro_required": false
+        },
+        {
+            "name": "Doctor Profile",
+            "screenshot": "screenshots\/doctor-profile.jpg",
+            "source": "templates\/doctor-profile-44b75a0c960fce483bacfb17aa791a25.json",
+            "preview_url": false,
+            "type": "section",
+            "metadata": {
+                "template_type": "section",
+                "elementor_pro_required": false
+            },
+            "elementor_pro_required": false
+        },
+        {
+            "name": "About Us 1",
+            "screenshot": "screenshots\/about-us-1.jpg",
+            "source": "templates\/about-us-1-d8df7dd3c43200ef947d0ba478c1a2c5.json",
+            "preview_url": false,
+            "type": "section",
+            "metadata": {
+                "template_type": "section",
+                "elementor_pro_required": false
+            },
+            "elementor_pro_required": false
+        },
+        {
+            "name": "About Us 2",
+            "screenshot": "screenshots\/about-us-2-pro.jpg",
+            "source": "templates\/about-us-2-40cffc8c47bca2edb1a9a8a15389b3b8.json",
+            "preview_url": false,
+            "type": "section",
+            "metadata": {
+                "template_type": "section",
+                "elementor_pro_required": true
+            },
+            "elementor_pro_required": true
+        },
+        {
+            "name": "Pricing 1",
+            "screenshot": "screenshots\/pricing-1-pro.jpg",
+            "source": "templates\/pricing-1-075395dc73de1949f3be6524fe07a859.json",
+            "preview_url": false,
+            "type": "section",
+            "metadata": {
+                "template_type": "section",
+                "elementor_pro_required": true
+            },
+            "elementor_pro_required": true
+        },
+        {
+            "name": "Pricing 2",
+            "screenshot": "screenshots\/pricing-2.jpg",
+            "source": "templates\/pricing-2-b84ac2d0d870ec1f04cc46aa76f8bf10.json",
+            "preview_url": false,
+            "type": "section",
+            "metadata": {
+                "template_type": "section",
+                "elementor_pro_required": true
+            },
+            "elementor_pro_required": true
+        },
+        {
+            "name": "FAQ",
+            "screenshot": "screenshots\/faq.jpg",
+            "source": "templates\/faq-acbf3e1a2e0e37e54b2289afc2775d38.json",
+            "preview_url": false,
+            "type": "section",
+            "metadata": {
+                "template_type": "section",
+                "elementor_pro_required": false
+            },
+            "elementor_pro_required": false
+        },
+        {
+            "name": "Reviews",
+            "screenshot": "screenshots\/reviews.jpg",
+            "source": "templates\/reviews-27196e07155dc8b0ac152daafc6822a2.json",
+            "preview_url": false,
+            "type": "section",
+            "metadata": {
+                "template_type": "section",
+                "elementor_pro_required": false
+            },
+            "elementor_pro_required": false
+        },
+        {
+            "name": "Booking",
+            "screenshot": "screenshots\/booking-pro.jpg",
+            "source": "templates\/booking-98322316b6441bdfc187f80f7f23e2fd.json",
+            "preview_url": false,
+            "type": "section",
+            "metadata": {
+                "template_type": "section",
+                "elementor_pro_required": true
+            },
+            "elementor_pro_required": true
+        },
+        {
+            "name": "Contact Us",
+            "screenshot": "screenshots\/contact-us.jpg",
+            "source": "templates\/contact-us-3b16c2caf85aaf7f37d521ab8c0d2b35.json",
+            "preview_url": false,
+            "type": "section",
+            "metadata": {
+                "template_type": "section",
+                "elementor_pro_required": false
+            },
+            "elementor_pro_required": false
+        }
+    ],
+    "required_plugins": [
+        {
+            "name": "Elementor",
+            "version": "2.9.6",
+            "file": "elementor\/elementor.php",
+            "author": "Elementor.com"
+        },
+        {
+            "name": "Elementor Pro",
+            "version": "2.9.6",
+            "file": "elementor-pro\/elementor-pro.php",
+            "author": "Elementor.com"
+        }
+    ],
+    "required_css": [
+        {
+            "name": "Custom CSS",
+            "description": "These styles are added to the WordPress Customizer.",
+            "file": "css\/customizer.css"
+        }
+    ],
+    "images": []
+}
