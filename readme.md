@@ -42,7 +42,7 @@ Database: mySQL
 ## Plugins used for features & UI 
 * Elementor (v3.6.1)
 * Unlimited Elements for Elementor (v1.5.10)
-* Graphina Charts (v1.7.1)
+* Graphina Charts (v1.7.1) 
 * Custom Post Type (v1.11.12)
 * Advanced Custom Fields (v5.12.1)
 
