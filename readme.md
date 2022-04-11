@@ -33,7 +33,7 @@ Current Features:
 * Listing of available volunteering jobs 
 
 # Technical Information 
-Framework: WordPress.org  (v5.9) 
+CMS: WordPress.org  (v5.9) 
 
 Theme: Hello Elementor (v2.5.0)
 
