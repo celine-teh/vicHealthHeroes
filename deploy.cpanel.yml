@@ -1,0 +1,4 @@
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/nomisite/vicshealthheroes.xyz/iteration-1
+    - /bin/cp -R * $DEPLOYPATH
