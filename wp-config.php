@@ -67,7 +67,7 @@ define('NONCE_SALT', 'Z6P9ICe4Q)]LB3qen_R!cxnQ|E3bf%kGR;1+1n)4Z81uX])*12!#+#9f#M
  * You can have multiple installations in one database if you give each
  * a unique prefix. Only numbers, letters, and underscores please!
  */
-$table_prefix = 'wpstg1_'; // Changed by WP Staging
+$table_prefix = 'wpstg3_'; // Changed by WP Staging
 
 
 define('WP_ALLOW_MULTISITE', false);
@@ -76,10 +76,10 @@ define('WP_ALLOW_MULTISITE', false);
 /** Absolute path to the WordPress directory. */
 define('UPLOADS', 'wp-content/uploads'); 
 define('WP_PLUGIN_DIR', __DIR__ . "/wp-content/plugins"); 
-define('WP_PLUGIN_URL', 'https://vicshealthheroes.xyz/iteration2/wp-content/plugins'); 
+define('WP_PLUGIN_URL', 'https://vicshealthheroes.xyz/expo/wp-content/plugins'); 
 define('WP_LANG_DIR', __DIR__ . "/wp-content/languages"); 
-define('WP_HOME', 'https://vicshealthheroes.xyz/iteration2'); 
-define('WP_SITEURL', 'https://vicshealthheroes.xyz/iteration2'); 
+define('WP_HOME', 'https://vicshealthheroes.xyz/expo'); 
+define('WP_SITEURL', 'https://vicshealthheroes.xyz/expo'); 
 define('WP_CACHE', false); 
 define('WP_ENVIRONMENT_TYPE', 'staging'); 
 if ( ! defined( 'ABSPATH' ) ) {

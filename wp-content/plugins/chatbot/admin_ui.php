@@ -89,8 +89,7 @@ if ( ! defined( 'ABSPATH' ) ) {
           <a class="wpbot_addons_link" href="https://www.quantumcloud.com/products/chatbot-addons/" target="_blank">
           <i class="fa fa-puzzle-piece" aria-hidden="true"></i><span class="wpwbot-admin-tab-name"><?php echo esc_html__('Addons', 'wpchatbot'); ?> </span> <i class="fa fa-external-link" aria-hidden="true"></i>
         </a>
-        <a class="wpbot_free_messenger_adds" href="https://wordpress.org/plugins/wpbot/" target="_blank">Chat Session addon - Save and review the user sessions with the ChatBot</a> 
-        <a class="wpbot_free_messenger_adds" href="https://wordpress.org/plugins/conversational-forms/" target="_blank">Create Menu Driven Conversations and forms with the Conversational Form addon</a> 
+        <a class="wpbot_free_messenger_adds" href="https://wordpress.org/plugins/conversational-forms/" target="_blank">Create Button Driven Conversations and forms with the Conversational Form addon</a> 
         <a class="wpbot_free_messenger_adds" href="https://wordpress.org/plugins/chatbot-for-messenger/" target="_blank">Create Auto Facebook Page Comments and Messenger Bot with the Messenger addon</a> 
 
 </nav>
@@ -1650,6 +1649,16 @@ if ( ! defined( 'ABSPATH' ) ) {
                         <input type="text" class="form-control qc-opt-dcs-font"
                                                            name="qlcd_wp_chatbot_sys_key_reset"
                                                            value="<?php echo(get_option('qlcd_wp_chatbot_sys_key_reset') != '' ? get_option('qlcd_wp_chatbot_sys_key_reset') : 'reset'); ?>">
+                      </div>
+                      <div class="form-group">
+                        <h4 class="qc-opt-title"><strong>
+                          <?php esc_html_e('eMail', 'wpchatbot'); ?>
+                          </strong>
+                          <?php esc_html_e('Keyword to Send eMail', 'wpchatbot'); ?>
+                        </h4>
+                        <input type="text" class="form-control qc-opt-dcs-font"
+                                                           name="qlcd_wp_chatbot_sys_key_email"
+                                                           value="<?php echo(get_option('qlcd_wp_chatbot_sys_key_email') != '' ? get_option('qlcd_wp_chatbot_sys_key_email') : 'email'); ?>">
                       </div>
                       <div class="form-group">
                         <?php

@@ -41,7 +41,6 @@
      * greeting for new and already visited shopper
      * based the memory after asking thier name.
      */
-
     var wpwWelcome={
         greeting:function () {
             //generating unique session id.
@@ -297,12 +296,12 @@
                 }else{
                     var shopperphone = '';
                 }
-                console.log(localStorage.getItem('botsessionid'))
-                console.log(wp_chatbot_obj.is_chat_session_active)
+                
+                
                 var data = {'action':'qcld_wb_chatbot_conversation_save','session_id': localStorage.getItem('botsessionid'),'name':shopper,'email':useremail, 'phone':shopperphone, 'conversation':wpwKits.htmlEntities(wpwHistory), 'security':globalwpw.settings.obj.ajax_nonce, 'user_id': globalwpw.settings.obj.current_user_id};
                 if(wp_chatbot_obj.is_chat_session_active == 1){
                     wpwKits.ajax(data).done(function (response) {
-                        console.log('response');
+                        console.log(globalwpw.settings.obj)
                     })
                 }
                 
@@ -1245,6 +1244,21 @@
                     })
                 }
         },
+        email: function(){
+            if(typeof(globalwpw.hasNameCookie)=='undefined'|| globalwpw.hasNameCookie==''){
+                var shopperName=  globalwpw.settings.obj.shopper_demo_name;
+            }else{
+                var shopperName=globalwpw.hasNameCookie;
+            }
+            var askEmail='Hello '+shopperName+'! '+ wpwKits.randomMsg(globalwpw.settings.obj.asking_email);
+            wpwMsg.single(askEmail);
+            //Now updating the support part as .
+            globalwpw.supportStep='email';
+            globalwpw.wildCard=1;
+            //keeping value in localstorage
+            localStorage.setItem("wildCard",  globalwpw.wildCard);
+            localStorage.setItem("supportStep",  globalwpw.supportStep);
+        },
         reset: function(msg){
             $('#wp-chatbot-messages-container').html('');
             localStorage.removeItem('shopper');
@@ -1362,6 +1376,10 @@
                     globalwpw.wildCard=25;
                     globalwpw.resetStep='welcome';
                     wpwTree.reset(msg);
+                }
+                if(msg.toLowerCase()==globalwpw.settings.obj.sys_key_email.toLowerCase()){
+              
+                    wpwTree.email();
                 }
 				if( globalwpw.settings.obj.sys_key_livechat && msg.toLowerCase()==globalwpw.settings.obj.sys_key_livechat.toLowerCase()){
 					wpwKits.enableEditor(wpwKits.randomMsg(globalwpw.settings.obj.send_a_msg));
@@ -2514,5 +2532,6 @@
         preLoadingTime:0,
         wildcardsShowTime:5000,
     }
-
+    
+    
 })(jQuery);

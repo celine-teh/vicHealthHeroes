@@ -759,6 +759,7 @@ color: #fff;
 }
 a.wpbot_free_messenger_adds {
     background: #f0ad4e !important;
+	color: #000 !important;
 }
 
 a.wpbot_free_messenger_adds:hover {

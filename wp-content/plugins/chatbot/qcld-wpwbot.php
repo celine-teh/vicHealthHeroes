@@ -4,7 +4,7 @@
  * Plugin URI: https://wordpress.org/plugins/chatbot/
  * Description: ChatBot is a native WordPress ChatBot plugin to provide quick support and email functionality.
  * Donate link: https://www.quantumcloud.com
- * Version: 4.0.5
+ * Version: 4.0.7
  * @author    QuantumCloud
  * Author: QuantumCloud
  * Author URI: https://www.quantumcloud.com/
@@ -18,7 +18,7 @@
 
 
 if (!defined('ABSPATH')) exit; // Exit if accessed directly
-define('QCLD_wpCHATBOT_VERSION', '4.0.3');
+define('QCLD_wpCHATBOT_VERSION', '4.0.7');
 define('QCLD_wpCHATBOT_REQUIRED_wpCOMMERCE_VERSION', 2.2);
 define('QCLD_wpCHATBOT_PLUGIN_DIR_PATH', plugin_dir_path(__FILE__));
 define('QCLD_wpCHATBOT_PLUGIN_URL', plugin_dir_url(__FILE__));
@@ -395,6 +395,7 @@ class qcld_wb_Chatbot
             'sys_key_order' => get_option('qlcd_wp_chatbot_sys_key_order'),
             'sys_key_support' => get_option('qlcd_wp_chatbot_sys_key_support'),
             'sys_key_reset' => get_option('qlcd_wp_chatbot_sys_key_reset'),
+            'sys_key_email' => get_option('qlcd_wp_chatbot_sys_key_email'),
             'help_welcome' => $this->qcld_wb_chatbot_str_replace(unserialize(get_option('qlcd_wp_chatbot_help_welcome'))),
             'back_to_start' => $this->qcld_wb_chatbot_str_replace(unserialize(get_option('qlcd_wp_chatbot_back_to_start'))),
             'help_msg' => $this->qcld_wb_chatbot_str_replace(unserialize(get_option('qlcd_wp_chatbot_help_msg'))),
@@ -1072,6 +1073,8 @@ class qcld_wb_Chatbot
                 update_option('qlcd_wp_chatbot_sys_key_support', sanitize_text_field($qlcd_wp_chatbot_sys_key_support));
                 $qlcd_wp_chatbot_sys_key_reset = @$_POST["qlcd_wp_chatbot_sys_key_reset"];
                 update_option('qlcd_wp_chatbot_sys_key_reset', sanitize_text_field($qlcd_wp_chatbot_sys_key_reset));
+                $qlcd_wp_chatbot_sys_key_email = @$_POST["qlcd_wp_chatbot_sys_key_email"];
+                update_option('qlcd_wp_chatbot_sys_key_email', sanitize_text_field($qlcd_wp_chatbot_sys_key_email));
                 $qlcd_wp_chatbot_wildcard_product = @$_POST["qlcd_wp_chatbot_wildcard_product"];
                 update_option('qlcd_wp_chatbot_wildcard_product', serialize($qlcd_wp_chatbot_wildcard_product));
                 $qlcd_wp_chatbot_wildcard_catalog = @$_POST["qlcd_wp_chatbot_wildcard_catalog"];
@@ -1878,6 +1881,9 @@ function qcld_wb_chatboot_defualt_options(){
     if(!get_option('qlcd_wp_chatbot_sys_key_reset')) {
         update_option('qlcd_wp_chatbot_sys_key_reset', 'reset');
     }
+    if(!get_option('qlcd_wp_chatbot_sys_key_email')) {
+        update_option('qlcd_wp_chatbot_sys_key_email', 'email');
+    }
     if(!get_option('qlcd_wp_chatbot_help_welcome')) {
         update_option('qlcd_wp_chatbot_help_welcome', serialize(array('Welcome to Help Section.')));
     }
@@ -2307,6 +2313,7 @@ function qcld_wb_chatboot_delete_all_options(){
     delete_option('qlcd_wp_chatbot_sys_key_order');
     delete_option('qlcd_wp_chatbot_sys_key_support');
     delete_option('qlcd_wp_chatbot_sys_key_reset');
+    delete_option('qlcd_wp_chatbot_sys_key_email');
     delete_option('qlcd_wp_chatbot_order_username_not_exist');
     delete_option('qlcd_wp_chatbot_order_username_thanks');
     delete_option('qlcd_wp_chatbot_order_password_incorrect');

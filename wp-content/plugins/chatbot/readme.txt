@@ -4,7 +4,7 @@ Donate link: https://www.quantumcloud.com/products/
 Tags: bot, chatbot, chat bot, live chat, live support, contact bot, HelpDesk, FAQ bot, Support bot
 Requires at least: 4.6
 Tested up to: 5.9
-Stable tag: 4.0.5
+Stable tag: 4.0.7
 Requires PHP: 5.6
 License: GPLv2 or later
 License URI: https://www.quantumcloud.com/products/
@@ -13,7 +13,7 @@ ChatBot for Website. NATIVE, No code, Conversational forms, Live Chat, HelpDesk.
 
 == Description ==
 = ChatBot for WordPress - WPBot =
-WPBot is an easy to use, Native, No coding required, AI ChatBot plugin for your WordPress website.
+WPBot is an easy to use, Native, No coding required, AI ChatBot plugin for your WordPress website. Manage your ChatBot from the WordPress Dashboard.
 
 You can use WPBot as as a <strong>plug n' play</strong> AI website ChatBot without any technical knowledge at all. Just install it and the ChatBot can chat with the website users, show text responses you created from the WordPress backend, display a small set of FAQs, let users email you for support or leave their phone numbers like a floating HelpDesk or a Conversational Floating Contact bot. 
 
@@ -374,6 +374,12 @@ Images, GIFs and Youtube Videos are supprted in the pro version. Pro version als
 2. Simple Text Responses Edit
 
 == Changelog ==
+
+= 4.0.7 =
+# Updated buttons
+
+= 4.0.6 =
+# Added email command
 
 = 4.0.5 =
 # Fixed reset command
