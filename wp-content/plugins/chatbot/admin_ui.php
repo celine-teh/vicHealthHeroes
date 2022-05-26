@@ -23,13 +23,13 @@ if ( ! defined( 'ABSPATH' ) ) {
           <h2><?php echo __('WPBot Control Panel', 'wpchatbot'); ?><?php echo get_option('wp_chatbot_index_meta'); ?></h2>
         </div>
         <div class="col-sm-6 text-right wp-chatbot-version">
-          <h3>
-            <?php esc_html_e('The Lite Version', 'wpchatbot'); ?>
+          
+          <div class="wpchatbot-lite-version-section">
+          <h3 class="wpchatbot-liteversion">
+            <?php esc_html_e('The Lite Version', 'wpchatbot'); ?> 
           </h3>
-          <p><a target="_blank" href="https://www.quantumcloud.com/">
-            <?php esc_html_e('WPBot is a project by Web Design Company QuantumCloud', 'wpchatbot'); ?>
-            </a></p>
-          <p><a style="color: #b2ff20;" href="https://www.quantumcloud.com/products/chatbot-for-wordpress/" target="_blank">Upgrade To Pro</a></p>
+			<a class="wpchatbot-Upgrade" href="https://www.quantumcloud.com/products/chatbot-for-wordpress/" target="_blank">Upgrade To Pro</a>
+            </div>
         </div>
       </div>
     </header>
@@ -89,8 +89,9 @@ if ( ! defined( 'ABSPATH' ) ) {
           <a class="wpbot_addons_link" href="https://www.quantumcloud.com/products/chatbot-addons/" target="_blank">
           <i class="fa fa-puzzle-piece" aria-hidden="true"></i><span class="wpwbot-admin-tab-name"><?php echo esc_html__('Addons', 'wpchatbot'); ?> </span> <i class="fa fa-external-link" aria-hidden="true"></i>
         </a>
-<a class="wpbot_free_messenger_adds" href="https://wordpress.org/plugins/conversational-forms/" target="_blank">Create Menu Driven Conversations and forms with the Conversational Form addon</a> 
-<a class="wpbot_free_messenger_adds" href="https://wordpress.org/plugins/chatbot-for-messenger/" target="_blank">Create Auto Facebook Page Comments and Messenger Bot with the Messenger addon</a> 
+        <a class="wpbot_free_messenger_adds" href="https://wordpress.org/plugins/wpbot/" target="_blank">Chat Session addon - Save and review the user sessions with the ChatBot</a> 
+        <a class="wpbot_free_messenger_adds" href="https://wordpress.org/plugins/conversational-forms/" target="_blank">Create Menu Driven Conversations and forms with the Conversational Form addon</a> 
+        <a class="wpbot_free_messenger_adds" href="https://wordpress.org/plugins/chatbot-for-messenger/" target="_blank">Create Auto Facebook Page Comments and Messenger Bot with the Messenger addon</a> 
 
 </nav>
         <div class="content-wrap">
@@ -334,39 +335,7 @@ if ( ! defined( 'ABSPATH' ) ) {
                   </div>
                 </div>
               </div>
-              <!--<div class="row">
-                                    <div class="col-xs-12">
-                                        <h4 class="qc-opt-title"> <?php esc_html_e('Sound on Page Load', 'wpchatbot'); ?> </h4>
-                                        <div class="form-group">
-                                            <input value="1" id="enable_wp_chatbot_sound_initial" type="checkbox"
-                                                   name="enable_wp_chatbot_sound_initial" <?php echo(get_option('enable_wp_chatbot_sound_initial') == 1 ? 'checked' : ''); ?>>
-                                            <label for="enable_wp_chatbot_sound_initial"><?php esc_html_e('Enable to play sound on initial page load', 'wpchatbot'); ?> </label>
-                                        </div>
-                                    </div>
-                                </div>--> 
-              
-              <!-- row--> 
-              <!--<div class="row">
-                                    <div class="col-xs-12">
-                                        <h4 class="qc-opt-title"> <?php esc_html_e('Disable WpBot Icon Animation', 'wpchatbot'); ?> </h4>
-                                        <div class="cxsc-settings-blocks">
-                                            <input value="1" id="disable_wp_chatbot_icon_animation" type="checkbox"
-                                                   name="disable_wp_chatbot_icon_animation" <?php echo(get_option('disable_wp_chatbot_icon_animation') == 1 ? 'checked' : ''); ?>>
-                                            <label for="disable_wp_chatbot_icon_animation"><?php esc_html_e('Disable WpBot icon border animation', 'wpchatbot'); ?> </label>
-                                        </div>
-                                    </div>
-                                </div>--> 
-              
-              <!--<div class="row">
-                                    <div class="col-xs-12">
-                                        <h4 class="qc-opt-title"><?php esc_html_e('Disable WpBot Opening Notification', 'wpchatbot'); ?>  </h4>
-                                        <div class="cxsc-settings-blocks">
-                                            <input value="1" id="disable_wp_chatbot_notification" type="checkbox"
-                                                   name="disable_wp_chatbot_notification" <?php echo(get_option('disable_wp_chatbot_notification') == 1 ? 'checked' : ''); ?>>
-                                            <label for="disable_wp_chatbot_notification"><?php esc_html_e('Disable WpBot Opening notification messages', 'wpchatbot'); ?> </label>
-                                        </div>
-                                    </div>
-                                </div>-->
+        
               <div class="row">
                 <div class="col-xs-12">
                   <h4 class="qc-opt-title">
@@ -391,30 +360,7 @@ if ( ! defined( 'ABSPATH' ) ) {
                   </div>
                 </div>
               </div>
-              <?php if(function_exists('qcpdcs_chat_session_menu_fnc') || function_exists('qcwp_chat_session_menu_fnc')){?>
-              <div class="row">
-                <div class="col-xs-12">
-                  <h4 class="qc-opt-title"> <?php echo esc_html__('Enable Chat session addon', 'wpchatbot'); ?> </h4>
-                  <div class="cxsc-settings-blocks">
-                    <input value="1" id="enable_chat_session" type="checkbox"
-                                                   name="enable_chat_session" <?php echo(get_option('enable_chat_session') == 1 ? 'checked' : ''); ?>>
-                    <label for="enable_chat_session"><?php echo esc_html__('Enable Chat session addon', 'wpchatbot'); ?> </label>
-                  </div>
-                </div>
-              </div>
-              <?php } ?>
-              <!--<div class="row">
-                                    <div class="col-xs-12">
-                                        <h4 class="qc-opt-title"><?php esc_html_e('Disable Call Me', 'wpchatbot'); ?>  </h4>
-										<div class="cxsc-settings-blocks">
-											<input value="1" id="disable_wp_chatbot_call_sup" type="checkbox"
-												   name="disable_wp_chatbot_call_sup" <?php echo(get_option('disable_wp_chatbot_call_sup') == 1 ? 'checked' : ''); ?>>
-											<label for="disable_wp_chatbot_call_sup"><?php esc_html_e('Disable Call Me button', 'wpchatbot'); ?> </label>
-										</div>
-                                    </div>
-                                </div>--> 
-              
-              <!-- row-->
+         
               <div class="row">
                 <div class="col-xs-12">
                   <h4 class="qc-opt-title">

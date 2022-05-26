@@ -1,6 +1,6 @@
 <?php
 
-//Begin Really Simple SSL session cookie settings //test
+//Begin Really Simple SSL session cookie settings
 @ini_set('session.cookie_httponly', true);
 @ini_set('session.cookie_secure', true);
 @ini_set('session.use_only_cookies', true);
@@ -67,13 +67,21 @@ define('NONCE_SALT', 'Z6P9ICe4Q)]LB3qen_R!cxnQ|E3bf%kGR;1+1n)4Z81uX])*12!#+#9f#M
  * You can have multiple installations in one database if you give each
  * a unique prefix. Only numbers, letters, and underscores please!
  */
-$table_prefix = 'wp_vhh';
+$table_prefix = 'wpstg1_'; // Changed by WP Staging
 
 
-define('WP_ALLOW_MULTISITE', true);
+define('WP_ALLOW_MULTISITE', false);
 /* That's all, stop editing! Happy publishing. */
 
 /** Absolute path to the WordPress directory. */
+define('UPLOADS', 'wp-content/uploads'); 
+define('WP_PLUGIN_DIR', __DIR__ . "/wp-content/plugins"); 
+define('WP_PLUGIN_URL', 'https://vicshealthheroes.xyz/iteration2/wp-content/plugins'); 
+define('WP_LANG_DIR', __DIR__ . "/wp-content/languages"); 
+define('WP_HOME', 'https://vicshealthheroes.xyz/iteration2'); 
+define('WP_SITEURL', 'https://vicshealthheroes.xyz/iteration2'); 
+define('WP_CACHE', false); 
+define('WP_ENVIRONMENT_TYPE', 'staging'); 
 if ( ! defined( 'ABSPATH' ) ) {
 	define( 'ABSPATH', dirname( __FILE__ ) . '/' );
 }

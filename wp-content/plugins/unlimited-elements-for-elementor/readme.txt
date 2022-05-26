@@ -466,6 +466,22 @@ Note : This plugin works with Elementor. Make sure you have [Elementor](https://
 
 == Changelog ==
 
+version 1.5.11: 2022-04-13
+
+* Feature: made option to put elementor post_content inside post widget if the post made by elementor
+* Feature: added additional fields to getPostAuthor function like avatar url and author meta
+* Feature: show the "no posts" message with filters in post list / grid
+* Feature: add background location (back/front) to background widgets
+* Feature: done option to get post parent with the posts in posts selection
+* Fix: set prices display in woocommerce widgets including tax
+* Fix: fixed editor js files didn't loaded bug
+* Fix: fixed css output with dynamic template and inline css mode
+* Fix: fixed the ajax pagination that now works with post based gallery widget
+* Fix: fixed filters scripts loading before jquery in js
+* Fix: allow to select empty terms in term selection control
+* Change: set default values of responsive number / slider / dropdown controls to desktop default values
+
+
 version 1.5.10: 2022-04-04
 
 * Fix: fixed title and description source in gallery source selection

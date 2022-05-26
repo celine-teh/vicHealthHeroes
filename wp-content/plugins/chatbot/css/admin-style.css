@@ -732,10 +732,39 @@ a.wpbot_free_messenger_adds:hover {
 
 
 
+.wp-chatbot-version h3 {
+    color: #fff;
+    padding: 8px;
+    display: inline-table;
+    background: #337ab7;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-shadow: 0 0 2px #000;
+    font-size: 15px;
+    line-height: 20px;
+    border-radius: 5px;
+}
+a.wpchatbot-Upgrade {
+    background: #f0ad4e;
+    padding: 8px;
+    border-radius: 5px;
+    font-size: 15px;
+    text-transform: uppercase;	
+	color: #fff;
+}
+a.wpchatbot-Upgrade:hover {
+background: #337ab7;
+text-decoration:none;
+color: #fff;
+}
+a.wpbot_free_messenger_adds {
+    background: #f0ad4e !important;
+}
 
-
-
-
+a.wpbot_free_messenger_adds:hover {
+    background: #337ab7 !important;
+    color: #fff !important;
+}
 
 
 

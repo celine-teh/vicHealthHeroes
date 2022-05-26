@@ -1,4 +1,22 @@
 
+version 1.5.11:
+
+-feature: made option to put elementor post_content inside post widget if the post made by elementor
+-feature: added additional fields to getPostAuthor function like avatar url and author meta
+-bug fix: set prices display in woocommerce widgets including tax
+-bug fix: fixed editor js files didn't loaded bug
+-bug fix: fixed css output with dynamic template and inline css mode
+-feature: done option to get post parent with the posts in posts selection
+-bug fix: fixed the ajax pagination that now works with post based gallery widget
+-bug fix: fixed filters scripts loading before jquery in js
+-change: set default values of responsive number / slider / dropdown controls to desktop default values
+-bug fix: allow to select empty terms in term selection control
+-feature: show the "no posts" message with filters in post list / grid
+-feature: add background location (back/front) to background widgets
+
+
+
+
 version 1.5.10:
 
 -bug fix: fixed title and description source in gallery source selection
@@ -6,7 +24,6 @@ version 1.5.10:
 -feature: added "menu_id" for variouse uses as menu attribute output
 -feature: added option for side offset in owl carousel
 -feature: added option for second items html refresh in ajax filters
-
 
 
 version 1.5.9:

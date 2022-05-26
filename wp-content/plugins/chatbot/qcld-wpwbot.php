@@ -4,7 +4,7 @@
  * Plugin URI: https://wordpress.org/plugins/chatbot/
  * Description: ChatBot is a native WordPress ChatBot plugin to provide quick support and email functionality.
  * Donate link: https://www.quantumcloud.com
- * Version: 3.9.9
+ * Version: 4.0.5
  * @author    QuantumCloud
  * Author: QuantumCloud
  * Author URI: https://www.quantumcloud.com/
@@ -18,7 +18,7 @@
 
 
 if (!defined('ABSPATH')) exit; // Exit if accessed directly
-define('QCLD_wpCHATBOT_VERSION', '3.9.9');
+define('QCLD_wpCHATBOT_VERSION', '4.0.3');
 define('QCLD_wpCHATBOT_REQUIRED_wpCOMMERCE_VERSION', 2.2);
 define('QCLD_wpCHATBOT_PLUGIN_DIR_PATH', plugin_dir_path(__FILE__));
 define('QCLD_wpCHATBOT_PLUGIN_URL', plugin_dir_url(__FILE__));
@@ -173,15 +173,20 @@ class qcld_wb_Chatbot
     }
 	
 	function screen_option(){
+        if( !empty($_POST['wp_screen_options'])){
+            $per_page_str = (int)$_POST['wp_screen_options']["value"];
+
+        }else{
+            $per_page_str = 20;
+        }
         $option = 'per_page';
 		$args   = [
 			'label'   => 'Response',
-			'default' => 5,
+			'default' => $per_page_str,
 			'option'  => 'responses_per_page'
 		];
-
 		add_screen_option( $option, $args );
-
+        
 		$this->response_list = new Response_list();
     }
 	
@@ -2754,6 +2759,7 @@ function wpbot_help_page_callback_func(){
 add_action('init', 'qc_wp_latest_update_check');
 function qc_wp_latest_update_check(){
 	global $wpdb;
+
 	if(!get_option('qc_wp_ludate_ck')){
 		update_option('qlcd_wp_chatbot_support_phone', 'Leave your number. We will call you back!');
 		update_option('qlcd_wp_chatbot_support_email', 'Send us Email');
@@ -2873,19 +2879,19 @@ function qc_wp_latest_update_check(){
         update_option('qc_bot_str_weight', $weight);
     }
 	if(isset($_POST['qc_bot_str_remove_stopwords']) && $_POST['qc_bot_str_remove_stopwords']!=''){
+      
         $stopwords = sanitize_text_field($_POST['qc_bot_str_remove_stopwords']);
-        update_option('qc_bot_str_remove_stopwords', $stopwords);
+        update_option('qc_bot_str_remove_stopwords', '1');
     }
 	if(isset($_POST['qc_bot_str_fields']) && !empty($_POST['qc_bot_str_fields'])){
-		
-		$table = $wpdb->prefix.'wpbot_response';
+        $table = $wpdb->prefix.'wpbot_response';
 		$fields = ($_POST['qc_bot_str_fields']);
+        update_option('qc_bot_str_fields', $fields);
 		qc_mysql_remove_existing_indexes();
 		
 		if($fields && !empty($fields)){
-			$wpdb->query("ALTER TABLE $table ADD FULLTEXT(".implode(', ', $fields).")");
+            $wpdb->query("ALTER TABLE $table ADD FULLTEXT(".implode(', ', $fields).")");
 		}
-        update_option('qc_bot_str_fields', $fields);
     }
 	
 	if(!get_option('wpbot_preloading_time')) {

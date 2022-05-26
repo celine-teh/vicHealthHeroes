@@ -1245,6 +1245,34 @@
                     })
                 }
         },
+        reset: function(msg){
+            $('#wp-chatbot-messages-container').html('');
+            localStorage.removeItem('shopper');
+            globalwpw.wildCard=0;
+            globalwpw.ai_step=0;
+            localStorage.setItem("wildCard",  globalwpw.wildCard);
+            localStorage.setItem("aiStep", globalwpw.ai_step);
+
+            globalwpw.formfieldid = '';
+            localStorage.setItem("formfieldid",  globalwpw.formfieldid);
+            globalwpw.formStep='welcome';
+            localStorage.setItem("formStep",  globalwpw.formStep);
+            globalwpw.formid='';
+            localStorage.setItem("formid",  globalwpw.formid);
+            globalwpw.formentry = 0;
+            localStorage.setItem("formentry",  globalwpw.formentry);
+
+            localStorage.removeItem("cx-name" );
+            localStorage.removeItem("cx-diaplayname" );
+            localStorage.removeItem("cx-languagecode" );
+            localStorage.removeItem("cx-timezone" );
+            var number = Math.random() // 0.9394456857981651
+            number.toString(36); // '0.xtis06h6'
+            var id = number.toString(36).substr(2); // 'xtis06h6'
+
+            localStorage.setItem('botsessionid', id);
+            wpwWelcome.greeting();
+        }
     };
     /*
      * wpwbot Actions are divided into two part
@@ -1443,21 +1471,18 @@
                         //simple text response wrapper
                         var data = {'action':'wpbo_search_response','name':globalwpw.hasNameCookie,'keyword':msg, 'language':globalwpw.settings.obj.language};
                         if($(globalwpw.settings.messageLastChild+' .wp-chatbot-comment-loader').length==0){
-                            $(globalwpw.settings.messageContainer).append(wpwKits.botPreloader());
+                          //  $(globalwpw.settings.messageContainer).append(wpwKits.botPreloader());
                         }
                         wpwKits.ajax(data).done(function (response) {
 
                             var json=$.parseJSON(response);
                             if(json.status=='success'){
                                 if(typeof(json.category)!=="undefined" && json.category){
-											
 									var question='';
 									$.each(json.data, function (i, obj) {
 										question += '<span class="qcld-chatbot-wildcard qcld_simple_txt_response">'+ obj.query +'</span>';
 									});
-									
 									wpwMsg.single_nobg(question);
-									
 								}
 								else if(json.multiple){
                                     var question='';

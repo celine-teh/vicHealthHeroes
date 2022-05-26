@@ -236,8 +236,12 @@ class Response_list extends WP_List_Table {
 
 		/** Process bulk action */
 		$this->process_bulk_action();
-
-		$per_page     = $this->get_items_per_page( 'responses_per_page', 5 );
+		if( !empty($_POST['wp_screen_options'] )){
+            $per_page = (int)$_POST['wp_screen_options']["value"];
+        }else{
+			$per_page     = $this->get_items_per_page( 'responses_per_page' );
+       
+        }
 		$current_page = $this->get_pagenum();
 		$total_items  = self::record_count();
 

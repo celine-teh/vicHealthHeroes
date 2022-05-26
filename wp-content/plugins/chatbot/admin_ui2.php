@@ -319,6 +319,148 @@ if(!empty($session_exists)){
                     </div>
                 </div>
             </div>
+
+            <div class="wpbot_single_addon">
+                <div class="wpbot_single_content">
+                    <div class="wpbot_addon_image">
+                        <img src="<?php echo esc_url(QCLD_wpCHATBOT_PLUGIN_URL.'images/telegram-addon.png'); ?>" title="" />
+                    </div>
+                    <div class="wpbot_addon_content">
+                        <div class="wpbot_addon_title">Telegram Addon</div>
+                        <div class="wpbot_addon_details">
+                        <?php if( is_plugin_active( 'telegram-chatbot-addon/init.php' ) ){
+                                echo '<span class="wp_addon_installed">Installed</span>';
+                            }else{
+                                echo '<span class="wp_addon_notinstalled">Not Installed</span>';
+                            } ?>
+                        
+                            <p> To connect telegram with chatbot</p>
+                            <?php  if( is_plugin_active( 'telegram-chatbot-addon/init.php' ) ){
+                                ?>
+                                <a class="button button-secondary" href="<?php echo esc_url(admin_url('admin.php?page=simple-text-response')); ?>" >Settings</a>
+                                <?php
+                            }else{
+                                ?>
+                                <a class="button button-secondary" href="https://www.quantumcloud.com/products/chatbot-addons/" target="_blank" >Get It Now</a>
+                                <?php
+                            } ?>
+                        </div>            
+                    </div>
+                </div>
+            </div>
+			<div class="wpbot_single_addon">
+                <div class="wpbot_single_content">
+                    <div class="wpbot_addon_image">
+                        <img src="<?php echo esc_url(QCLD_wpCHATBOT_PLUGIN_URL.'images/openai.png'); ?>" title="" />
+                    </div>
+                    <div class="wpbot_addon_content">
+                        <div class="wpbot_addon_title">Open AI Addon</div>
+                        <div class="wpbot_addon_details">
+                        <?php if( is_plugin_active( 'chatbot-openai-addon/qcld-bot-openai.php' ) ){
+                                echo '<span class="wp_addon_installed">Installed</span>';
+                            }else{
+                                echo '<span class="wp_addon_notinstalled">Not Installed</span>';
+                            } ?>
+                        
+                            <p>To connect open AI with your ChatBot</p>
+                            <?php if( is_plugin_active( 'chatbot-openai-addon/qcld-bot-openai.php' ) ){
+                                ?>
+                                <a class="button button-secondary" href="<?php echo esc_url(admin_url('admin.php?page=wpbotml-settings-page')); ?>" >Settings</a>
+                                <?php
+                            }else{
+                                ?>
+                                <a class="button button-secondary" href="https://www.quantumcloud.com/products/chatbot-addons/" target="_blank" >Get It Now</a>
+                                <?php
+                            } ?>
+                        </div>            
+                    </div>
+                </div>
+            </div>
+
+            <div class="wpbot_single_addon">
+                <div class="wpbot_single_content">
+                    <div class="wpbot_addon_image">
+                        <img src="<?php echo esc_url(QCLD_wpCHATBOT_PLUGIN_URL.'images/templates-addon.png'); ?>" title="" />
+                    </div>
+                    <div class="wpbot_addon_content">
+                        <div class="wpbot_addon_title">Extended UI AddOn</div>
+                        <div class="wpbot_addon_details">
+                        <?php if( is_plugin_active( 'chatbot-extended-ui/chatbot-extended-ui.php' ) ){
+                                echo '<span class="wp_addon_installed">Installed</span>';
+                            }else{
+                                echo '<span class="wp_addon_notinstalled">Not Installed</span>';
+                            } ?>
+                        
+                            <p>Extended UI of ChatBot</p>
+                            <?php if( is_plugin_active( 'chatbot-extended-ui/chatbot-extended-ui.php' ) ){
+                                ?>
+                                <a class="button button-secondary" href="<?php echo esc_url(admin_url('edit.php?post_type=qcldcontacter_record&page=qcld_wpvm_vmwbmdp_contacter_settings')); ?>" >Settings</a>
+                                <?php
+                            }else{
+                                ?>
+                                <a class="button button-secondary" href="https://www.quantumcloud.com/products/chatbot-addons/" target="_blank" >Get It Now</a>
+                                <?php
+                            } ?>
+                        </div>            
+                    </div>
+                </div>
+            </div>
+            <div class="wpbot_single_addon">
+                <div class="wpbot_single_content">
+                    <div class="wpbot_addon_image">
+                        <img src="<?php echo esc_url(QCLD_wpCHATBOT_PLUGIN_URL.'images/WhatsApp-Chatbot.png'); ?>" title="" />
+                    </div>
+                    <div class="wpbot_addon_content">
+                        <div class="wpbot_addon_title">Whatsapp AddOn</div>
+                        <div class="wpbot_addon_details">
+                        <?php if( is_plugin_active( 'whatsapp-chatbot-addon/whatsapp-chatbot-addon.php' ) ){
+                                echo '<span class="wp_addon_installed">Installed</span>';
+                            }else{
+                                echo '<span class="wp_addon_notinstalled">Not Installed</span>';
+                            } ?>
+                        
+                            <p>Connect Whatsapp with ChatBot</p>
+                            <?php if( is_plugin_active( 'whatsapp-chatbot-addon/whatsapp-chatbot-addon.php' ) ){
+                                ?>
+                                <a class="button button-secondary" href="<?php echo esc_url(admin_url('edit.php?post_type=qcldcontacter_record&page=qcld_wpvm_vmwbmdp_contacter_settings')); ?>" >Settings</a>
+                                <?php
+                            }else{
+                                ?>
+                                <a class="button button-secondary" href="https://www.quantumcloud.com/products/chatbot-addons/" target="_blank" >Get It Now</a>
+                                <?php
+                            } ?>
+                        </div>            
+                    </div>
+                </div>
+            </div>
+            <div class="wpbot_single_addon">
+                <div class="wpbot_single_content">
+                    <div class="wpbot_addon_image">
+                        <img src="<?php echo esc_url(QCLD_wpCHATBOT_PLUGIN_URL.'images/voice-logo.png'); ?>" title="" />
+                    </div>
+                    <div class="wpbot_addon_content">
+                        <div class="wpbot_addon_title">Voice AddOn</div>
+                        <div class="wpbot_addon_details">
+                        <?php if( is_plugin_active( 'voice-addon/init.php' ) ){
+                                echo '<span class="wp_addon_installed">Installed</span>';
+                            }else{
+                                echo '<span class="wp_addon_notinstalled">Not Installed</span>';
+                            } ?>
+                        
+                            <p>Add google voice assist with ChatBot</p>
+                            <?php if( is_plugin_active( 'voice-addon/init.php' ) ){
+                                ?>
+                                <a class="button button-secondary" href="<?php echo esc_url(admin_url('edit.php?post_type=qcldcontacter_record&page=qcld_wpvm_vmwbmdp_contacter_settings')); ?>" >Settings</a>
+                                <?php
+                            }else{
+                                ?>
+                                <a class="button button-secondary" href="https://www.quantumcloud.com/products/chatbot-addons/" target="_blank" >Get It Now</a>
+                                <?php
+                            } ?>
+                        </div>            
+                    </div>
+                </div>
+            </div>
             <div style="clear:both"></div>
             
         </div>

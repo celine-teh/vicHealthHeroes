@@ -1,19 +1,19 @@
-=== ChatBot ===
+=== ChatBot 🚀 ===
 Contributors: quantumcloud
 Donate link: https://www.quantumcloud.com/products/
 Tags: bot, chatbot, chat bot, live chat, live support, contact bot, HelpDesk, FAQ bot, Support bot
 Requires at least: 4.6
 Tested up to: 5.9
-Stable tag: 3.9.9
+Stable tag: 4.0.5
 Requires PHP: 5.6
 License: GPLv2 or later
 License URI: https://www.quantumcloud.com/products/
 
-NATIVE ChatBot for WordPress Website - WPBot. No code, Conversational forms, HelpDesk, Live Chat, Contact Bot. Most advanced and flexible WordPress ChatBot.
+ChatBot for Website. NATIVE, No code, Conversational forms, Live Chat, HelpDesk. Most advanced and flexible ChatBot for WordPress.
 
 == Description ==
-= What is the ChatBot for WordPress - WPBot? =
-WPBot is an easy to use, Native, No coding required, AI WordPress ChatBot plugin for your website.
+= ChatBot for WordPress - WPBot =
+WPBot is an easy to use, Native, No coding required, AI ChatBot plugin for your WordPress website.
 
 You can use WPBot as as a <strong>plug n' play</strong> AI website ChatBot without any technical knowledge at all. Just install it and the ChatBot can chat with the website users, show text responses you created from the WordPress backend, display a small set of FAQs, let users email you for support or leave their phone numbers like a floating HelpDesk or a Conversational Floating Contact bot. 
 
@@ -374,6 +374,24 @@ Images, GIFs and Youtube Videos are supprted in the pro version. Pro version als
 2. Simple Text Responses Edit
 
 == Changelog ==
+
+= 4.0.5 =
+# Fixed reset command
+
+= 4.0.4 =
+# Fixed a comment tag without space
+
+= 4.0.3 =
+# Fixed possible error with PHP 8
+
+= 4.0.2 =
+# Updated text info
+
+=4.0.1=
+# STR loading issue fix 
+# Added STR Search Field options
+# Chat session free activation option removed
+# ChatBot sessions addon button added
 
 =3.9.9=
 # Fixed a missing column in database

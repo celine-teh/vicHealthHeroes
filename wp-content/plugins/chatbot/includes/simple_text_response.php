@@ -125,6 +125,7 @@ global $wpdb;
 						</td>
 					</tr>
 					
+					
 				</tbody>
 			</table>
 			</div>
@@ -181,7 +182,6 @@ global $wpdb;
 						<br><i>Please enter a value between 0 to 1. Higher value means more exact matching of phrases.</i>
 					</td>
 				</tr>
-				<?php if(class_exists('Qcld_str_pro')): ?>
 				<tr valign="top">
 					<th scope="row">Search Fields</th>
 					<td>
@@ -200,15 +200,7 @@ global $wpdb;
 						<br><i>Please check/uncheck to allow/disallow searching in that fields</i>
 					</td>
 				</tr>
-				<tr valign="top">
-					<th scope="row">Remove Stopwords</th>
-					<td>
-						<input id="qc_bot_str_remove_stopwords" type="checkbox" name="qc_bot_str_remove_stopwords" value="1" <?php echo (get_option('qc_bot_str_remove_stopwords') && get_option('qc_bot_str_remove_stopwords')==1?'checked="checked"':''); ?> />
-						<label for="qc_bot_str_remove_stopwords">Remove Stopwords</label>
-						<br><i>Please enable to remove stopwords from users query for better searching.</i>
-					</td>
-				</tr>
-				<?php endif; ?>
+			
 				<tr valign="top">
 					<th scope="row"></th>
 					<td>
@@ -252,6 +244,16 @@ global $wpdb;
 
     <?php endif; ?>
 <script type="text/javascript">
+	var stopcheckBox = document.getElementById("qc_bot_str_remove_stopwords");
+	stopcheckBox.addEventListener('change', function () {
+		if (stopcheckBox.checked == true){
+			stopcheckBox.value = "1";
+			
+		} else {
+			stopcheckBox.value = "0";
+		}
+    });
+
 	var small_talk = document.getElementById('small_talk');
 	small_talk.addEventListener( 'click', () => { small_talk_import(); } );
 	function small_talk_import(){
@@ -265,14 +267,7 @@ global $wpdb;
 			setTimeout(function(){
 				window.location.reload();
 			}, 3000);
-			// Swal.fire({
-			// 	title: 'Smalltalk is imported',
-			// 	icon: 'success',
-			// }).then(() => {
-			// 	setTimeout(function(){
-			// 		window.location.reload();
-			// 	}, 3000);
-			// })
 		}
 	}
+	
 </script>
